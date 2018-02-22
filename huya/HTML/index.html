@@ -1,0 +1,692 @@
+
+<link rel="stylesheet" href="../CSS/index.css">
+<head>
+    <script src="../../jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <!--导航-->
+    <div class="huya_top">
+        <div class="huya_top_wrap">
+            <div class="huya_top_bd">
+                <h1 class="huya_top_logo">
+                    <a class="hy_logo_img" href="javaScript:;">
+                        <img src="../img/logo.png" width="120" height="36">
+                    </a>
+                </h1>
+                <div class="hy_top_nav">
+                    <span class="hy_nav_link hy_header_on">
+                        <a href="javaScript:;">首页</a>
+                    </span>
+                    <span class="hy_nav_link">
+                        <a href="javaScript:;">直播</a>
+                    </span>
+                    <div class="hy_nav_expand">
+                        <div  class="hy_nav_title">
+                            <a>分类</a>
+                            <i></i>
+                        </div>
+                        <div class="nav_expan_list nav_expand_game">
+                            <i class="arrow"></i>
+                            <dl class="expand_game_dl">
+                                <dt class="expand_game_dt"><a>热门分类</a></dt>
+                                <dd class="expand_game_dd"><a>英雄联盟</a></dd >
+                                <dd class="expand_game_dd"><a>绝地求生</a></dd >
+                                <dd class="expand_game_dd"><a>王者荣耀</a></dd >
+                                <dd class="expand_game_dd"><a>星秀</a></dd >
+                                <dd class="expand_game_dd"><a>主机游戏</a></dd >
+                                <dd class="expand_game_dd"><a>户外</a></dd >
+                                <dd class="expand_game_dd"><a>穿越火线</a></dd >
+                                <dd class="expand_game_dd"><a>我的世界</a></dd >
+                                <dd class="expand_game_dd"><a>地下城与勇士</a></dd >
+
+                            </dl>
+                            <dl class="expand_game_dl">
+                                <dt class="expand_game_dt"><a>热门分类</a></dt>
+                                <dd class="expand_game_dd"><a>英雄联盟</a></dd >
+                                <dd class="expand_game_dd"><a>绝地求生</a></dd >
+                                <dd class="expand_game_dd"><a>王者荣耀</a></dd >
+                                <dd class="expand_game_dd"><a>星秀</a></dd >
+                                <dd class="expand_game_dd"><a>主机游戏</a></dd >
+                                <dd class="expand_game_dd"><a>户外</a></dd >
+                                <dd class="expand_game_dd"><a>穿越火线</a></dd >
+                                <dd class="expand_game_dd"><a>我的世界</a></dd >
+                                <dd class="expand_game_dd"><a>地下城与勇士</a></dd >
+                            </dl>
+                            <a class="nav_expand_game_more">更多</a>
+                        </div>
+                    </div>
+                    <span class="hy_nav_link">
+                        <a href="javaScript:;">视频</a>
+                    </span>
+                </div>
+                <div class="huya_header_search">
+                    <form>
+                        <input type="text" autocomplete="off" placeholder="许典典">
+                        <button type="button" class="btn_search clickstat" >
+                            <i></i>
+                            搜索
+                        </button>
+                    </form>
+                </div>
+                <div class="huya_header_control">
+                    <div class="hy_nav_kaibo hy_nav_right" >
+                        <a class="hy_nav_titler">
+                            <i class="hy_title_kaibo"></i>
+                            <span>开播</span>
+                        </a>
+                    </div>
+                    <div class="hy_nav_download hy_nav_right" >
+                            <a class="hy_nav_titler">
+                                <i  class="hy_title_download"></i>
+                                <span>下载</span>
+                            </a>
+                            <div class="nav_expan_list nav_expand_download">
+                                <i class="arrow"></i>
+                                <div class="download_nav">
+                                    <a>
+                                        <i class="hy_nav_app_icon"></i>
+                                        <span>移动APP</span>
+                                    </a>
+                                    <a>
+                                        <i class="hy_nav_play_icon"></i>
+                                        <span>主播工具</span>
+                                    </a>
+                                    <a>
+                                        <i class="hy_nav_mm_icon"></i>
+                                        <span>开黑语音</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hy_nav_history hy_nav_right">
+                                <a class="hy_nav_titler">
+                                        <i  class="hy_title_history"></i>
+                                        <span>历史</span>
+                                    </a>
+                                    <div class="nav_expan_list nav_expand_history">
+                                            <i class="arrow"></i>
+                                          
+                                        </div>
+                        </div>
+                        <div class="un_login hy_nav_right">
+                            <div class="hy_nav_titler">
+                                <i class="hy_title_login"></i>
+                                <div class="un_login_btn">
+                                    <a href="javaScript:;">登录</a>
+                                    <l class="un_btn_l">|</l>
+                                    <a href="javaScript:;">注册</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导航-->
+    <!--视频模块 随机轮播 首推-->
+    <div class="mod_index_wrap">
+        <div class="banner">
+
+        </div>
+         <div class="mod_index_main">
+         <div class="main_lf">
+             <div class="main_lf_top">
+                 <div class="lf_top_video">
+                     <video id="video">
+                         
+                        
+                     </video>
+                     <div class="lf_top_bf"></div>
+                     <div class="lf_top_jr"><a>进入直播间</a></div>
+                 </div>
+                 <div class="lf_button" >
+                    <span class="lf_button_bf lf_button_bf2" title="开始观看"></span>
+                    <span class="lf_button_sx"></span>
+                    <div class="lf_button_rgbox">
+                        <span class="lf_button_rgbox_fkbtn"></span>
+                        <span class="lf_button_rgbox_ylbtn lf_button_rgbox_ylbtn1"></span>
+                        <span class="lf_button_rgbox_yl">
+                           <span class="yl_bg"></span>
+                           <span class="yl_bar"></span>
+                           <span class="yl_btn"></span>
+                        </span>
+                        <span class="lf_button_rgbox_qxbtn">高清</span>
+                        <span class="lf_button_rgbox_jrbtn">
+                            <span>进入直播间</span>
+                            <i></i>
+                        </span>
+                    </div>
+                 </div>
+             </div>
+
+         </div>
+         <div class="main_rg">
+             <ul class="main_rg_ul">
+                 <li queue="1" class="main_rg_li">
+                     <div class="rg_li_img">
+                         <img src="../img/ba1.jpg" >
+                         <div class="rg_li_i">
+                            <i></i>
+                         </div>
+                    </div>
+                     
+                 </li>
+                 <li queue="2" class="main_rg_li">
+                        <div class="rg_li_img">
+                            <img src="../img/ba2.jpg" >
+                            <div class="rg_li_i">
+                               <i></i>
+                            </div>
+                       </div>
+                        
+                    </li>
+                    <li queue="3"  class="main_rg_li">
+                            <div class="rg_li_img">
+                                <img src="../img/ba3.jpg" >
+                                <div class="rg_li_i">
+                                   <i></i>
+                                </div>
+                           </div>
+                            
+                        </li>
+                        <li queue="4" class="main_rg_li">
+                                <div class="rg_li_img">
+                                    <img src="../img/ba4.jpg" >
+                                    <div class="rg_li_i">
+                                       <i></i>
+                                    </div>
+                               </div>
+                                
+                            </li>
+                            <li queue="5" class="main_rg_li">
+                                    <div class="rg_li_img">
+                                        <img src="../img/ba5.jpg" >
+                                        <div class="rg_li_i">
+                                           <i></i>
+                                        </div>
+                                   </div>
+                                    
+                                </li>
+                                <li queue="6" class="main_rg_li">
+                                        <div class="rg_li_img">
+                                            <img src="../img/ba6.jpg" >
+                                            <div class="rg_li_i">
+                                               <i></i>
+                                            </div>
+                                       </div>
+                                        
+                                    </li>
+             </ul>
+
+         </div>
+        </div>
+    </div> 
+    <!--视频模块 二级推荐-->
+    <div class="f2_plate_recommend">
+        <div class="f2_modeule">
+            <div class="f2_modeule_top">
+                <a class="f2_modeule_top_a">
+                <i class="icon_wy"></i>
+                <span class="title_wy">网游电竞</span>
+                <span class="icon_link" ></span>
+            </a>
+            </div>
+            <div class="f2_modeule_center f2_modeule_center_1">
+                <a class="link_item link_item_0">LOL</a>
+                <a class="link_item link_item_1">CF</a>
+                <a class="link_item link_item_2">DNF</a>
+                <a class="link_item link_item_3">炉石传说</a>
+                <a class="link_item link_item_4">魔兽DOAT1</a>
+            </div>
+            <ul class="f2_modeule_bottom">
+                <li class="modeule_bottom_li">
+                <div class="modeule_bottom_img"> <img src="../img/1802d1ac674135d98279b864b07adafba73065431416.jpg"></div>
+                <div class="mofeule_video">
+                    <span class="mofeule_video_tab">QQ飞车</span>
+                    <div class="mofeule_video_bg"></div>
+                    <i class="mofeule_video_icon"></i>
+            
+                </div>
+                <span class="modeule_name">车神追会分</span>
+            </li>
+            <li class="modeule_bottom_li">
+                    <div class="modeule_bottom_img"> <img src="../img/1802fd4eb7d16546eda974064c1acd160f896064c81c.jpg" width="136px" height="76px"></div>
+                    <div class="mofeule_video">
+                        <span class="mofeule_video_tab">剑灵</span>
+                        <div class="mofeule_video_bg"></div>
+                        <i class="mofeule_video_icon"></i>
+                   
+                    </div>
+                    <span class="modeule_name">红包闹新春 给大家...</span>
+                </li>
+                <li class="modeule_bottom_li">
+                        <div class="modeule_bottom_img"> <img src="../img/1802e36946ae0a9051185ef56aab95b7028f9be022d0.jpg" width="136px" height="76px"></div>
+                        <div class="mofeule_video">
+                            <span class="mofeule_video_tab">炉石传说</span>
+                            <div class="mofeule_video_bg"></div>
+                            <i class="mofeule_video_icon"></i>
+                           
+                        </div>
+                        <span class="modeule_name">自选竞技场</span>
+                    </li>
+                    <li class="modeule_bottom_li">
+                            <div class="modeule_bottom_img"> <img src="../img/180236fc2ad5d8f3ec2ccb2f9552e056b9da3400b3df.jpg" width="136px" height="76px"></div>
+                            <div class="mofeule_video">
+                                <span class="mofeule_video_tab">守望先锋</span>
+                                <div class="mofeule_video_bg"></div>
+                                <i class="mofeule_video_icon"></i>
+                                
+                            </div>
+                            <span class="modeule_name">SYA SOLO红包大放送</span>
+                        </li>
+
+            </ul>
+        </div>
+        <div class="f2_modeule">
+                <div class="f2_modeule_top">
+                    <a class="f2_modeule_top_a">
+                    <i class="icon_wy"></i>
+                    <span class="title_wy">单机热游</span>
+                    <span class="icon_link" ></span>
+                </a>
+                </div>
+                <div class="f2_modeule_center f2_modeule_center_2">
+                    <a class="link_item link_item_0">绝地求生</a>
+                    <a class="link_item link_item_1">主机游戏</a>
+                    <a class="link_item link_item_2">我的世界</a>
+                    <a class="link_item link_item_3">方舟</a>
+                </div>
+                <ul class="f2_modeule_bottom">
+                    <li class="modeule_bottom_li">
+                    <div class="modeule_bottom_img"> <img src="../img/1802d1ac674135d98279b864b07adafba73065431416.jpg" width="136px" height="76px"></div>
+                    <div class="mofeule_video">
+                        <span class="mofeule_video_tab">QQ飞车</span>
+                        <div class="mofeule_video_bg"></div>
+                        <i class="mofeule_video_icon"></i>
+                
+                    </div>
+                    <span class="modeule_name">Five.小A|新年快乐，恭喜</span>
+                </li>
+                <li class="modeule_bottom_li">
+                        <div class="modeule_bottom_img"> <img src="../img/1802fd4eb7d16546eda974064c1acd160f896064c81c.jpg" width="136px" height="76px"></div>
+                        <div class="mofeule_video">
+                            <span class="mofeule_video_tab">剑灵</span>
+                            <div class="mofeule_video_bg"></div>
+                            <i class="mofeule_video_icon"></i>
+                       
+                        </div>
+                        <span class="modeule_name">最精彩的游戏直播</span>
+                    </li>
+                    <li class="modeule_bottom_li">
+                            <div class="modeule_bottom_img"> <img src="../img/1802e36946ae0a9051185ef56aab95b7028f9be022d0.jpg" width="136px" height="76px"></div>
+                            <div class="mofeule_video">
+                                <span class="mofeule_video_tab">炉石传说</span>
+                                <div class="mofeule_video_bg"></div>
+                                <i class="mofeule_video_icon"></i>
+                               
+                            </div>
+                            <span class="modeule_name">祝大家新年快乐，上电视</span>
+                        </li>
+                        <li class="modeule_bottom_li">
+                                <div class="modeule_bottom_img"> <img src="../img/180236fc2ad5d8f3ec2ccb2f9552e056b9da3400b3df.jpg" width="136px" height="76px"></div>
+                                <div class="mofeule_video">
+                                    <span class="mofeule_video_tab">守望先锋</span>
+                                    <div class="mofeule_video_bg"></div>
+                                    <i class="mofeule_video_icon"></i>
+                                    
+                                </div>
+                                <span class="modeule_name">春风吹得风满心，风之</span>
+                            </li>
+    
+                </ul>
+        </div>
+        <div class="f2_modeule">
+                <div class="f2_modeule_top">
+                    <a class="f2_modeule_top_a">
+                    <i class="icon_wy"></i>
+                    <span class="title_wy">娱乐天地</span>
+                    <span class="icon_link" ></span>
+                </a>
+                </div>
+                <div class="f2_modeule_center f2_modeule_center_3">
+                    <a class="link_item link_item_0">星秀</a>
+                    <a class="link_item link_item_1">吃喝玩乐</a>
+                    <a class="link_item link_item_2">颜值</a>
+                    <a class="link_item link_item_3">户外 </a>
+                    <a class="link_item link_item_4">二次元</a>
+                </div>
+                <ul class="f2_modeule_bottom">
+                    <li class="modeule_bottom_li">
+                    <div class="modeule_bottom_img"> <img src="../img/1802d1ac674135d98279b864b07adafba73065431416.jpg" width="136px" height="76px"></div>
+                    <div class="mofeule_video">
+                        <span class="mofeule_video_tab">QQ飞车</span>
+                        <div class="mofeule_video_bg"></div>
+                        <i class="mofeule_video_icon"></i>
+                
+                    </div>
+                    <span class="modeule_name">车神追会分</span>
+                </li>
+                <li class="modeule_bottom_li">
+                        <div class="modeule_bottom_img"> <img src="../img/1802fd4eb7d16546eda974064c1acd160f896064c81c.jpg" width="136px" height="76px"></div>
+                        <div class="mofeule_video">
+                            <span class="mofeule_video_tab">剑灵</span>
+                            <div class="mofeule_video_bg"></div>
+                            <i class="mofeule_video_icon"></i>
+                       
+                        </div>
+                        <span class="modeule_name">新年快乐！狗年旺旺！</span>
+                    </li>
+                    <li class="modeule_bottom_li">
+                            <div class="modeule_bottom_img"> <img src="../img/1802e36946ae0a9051185ef56aab95b7028f9be022d0.jpg" width="136px" height="76px"></div>
+                            <div class="mofeule_video">
+                                <span class="mofeule_video_tab">炉石传说</span>
+                                <div class="mofeule_video_bg"></div>
+                                <i class="mofeule_video_icon"></i>
+                               
+                            </div>
+                            <span class="modeule_name">韩国绅士</span>
+                        </li>
+                        <li class="modeule_bottom_li">
+                                <div class="modeule_bottom_img"> <img src="../img/180236fc2ad5d8f3ec2ccb2f9552e056b9da3400b3df.jpg" width="136px" height="76px"></div>
+                                <div class="mofeule_video">
+                                    <span class="mofeule_video_tab">守望先锋</span>
+                                    <div class="mofeule_video_bg"></div>
+                                    <i class="mofeule_video_icon"></i>
+                                    
+                                </div>
+                                <span class="modeule_name">充电</span>
+                            </li>
+    
+                </ul>
+        </div>
+        <div class="f2_modeule f2_modeule_4">
+                <div class="f2_modeule_top">
+                    <a class="f2_modeule_top_a">
+                    <i class="icon_wy"></i>
+                    <span class="title_wy">手游休闲</span>
+                    <span class="icon_link" ></span>
+                </a>
+                </div>
+                <div class="f2_modeule_center f2_modeule_center_4">
+                    <a class="link_item link_item_0">王者荣耀</a>
+                    <a class="link_item link_item_1">吃鸡手游</a>
+                    <a class="link_item link_item_2">荒岛特训</a>
+                    <a class="link_item link_item_3">棋牌休闲</a>
+                </div>
+                <ul class="f2_modeule_bottom">
+                    <li class="modeule_bottom_li">
+                    <div class="modeule_bottom_img"> <img src="../img/1802d1ac674135d98279b864b07adafba73065431416.jpg" width="136px" height="76px"></div>
+                    <div class="mofeule_video">
+                        <span class="mofeule_video_tab">QQ飞车</span>
+                        <div class="mofeule_video_bg"></div>
+                        <i class="mofeule_video_icon"></i>
+                
+                    </div>
+                    <span class="modeule_name">寒冰</span>
+                </li>
+                <li class="modeule_bottom_li">
+                        <div class="modeule_bottom_img"> <img src="../img/1802fd4eb7d16546eda974064c1acd160f896064c81c.jpg" width="136px" height="76px"></div>
+                        <div class="mofeule_video">
+                            <span class="mofeule_video_tab">剑灵</span>
+                            <div class="mofeule_video_bg"></div>
+                            <i class="mofeule_video_icon"></i>
+                       
+                        </div>
+                        <span class="modeule_name">新年快乐：祝大家身体健康</span>
+                    </li>
+                    <li class="modeule_bottom_li">
+                            <div class="modeule_bottom_img"> <img src="../img/1802e36946ae0a9051185ef56aab95b7028f9be022d0.jpg" width="136px" height="76px"></div>
+                            <div class="mofeule_video">
+                                <span class="mofeule_video_tab">炉石传说</span>
+                                <div class="mofeule_video_bg"></div>
+                                <i class="mofeule_video_icon"></i>
+                               
+                            </div>
+                            <span class="modeule_name">奶哥：新一年又开始</span>
+                        </li>
+                        <li class="modeule_bottom_li">
+                                <div class="modeule_bottom_img"> <img src="../img/180236fc2ad5d8f3ec2ccb2f9552e056b9da3400b3df.jpg" width="136px" height="76px"></div>
+                                <div class="mofeule_video">
+                                    <span class="mofeule_video_tab">守望先锋</span>
+                                    <div class="mofeule_video_bg"></div>
+                                    <i class="mofeule_video_icon"></i>
+                                    
+                                </div>
+                                <span class="modeule_name">皇室修真：从菜鸟到高手</span>
+                            </li>
+    
+                </ul>
+        </div>
+    </div>
+    <!--视频模块 二级推荐-->
+    <!--公告-->
+    <div class="announcement">
+        <div class="announcement_left">
+            <a class="announcement_left_img pic1 link">
+                <img src="../img/huya_1516327332_content.jpg">
+            </a>
+            <a class="announcement_left_img pic2 link">
+                <img src="../img/huya_1518423808_content.jpg">
+            </a>
+            <a class="announcement_left_img pic3 link">
+                <img src="../img/huya_1518173465_content.jpg">
+            </a>
+            <a class="announcement_left_img pic4 link">
+                <img src="../img/huya_1518173645_content.jpg">
+            </a>
+            <a class="announcement_left_img pic5 link">
+                <img src="../img/huya_1515588185_content.jpg">
+            </a>
+        </div>
+        <div class="announcement_center">
+            <h2 class="announcement_center_title">
+                <a class="announcement_center_taf1">
+                   2018狗年旺旺旺,新春活动集锦
+                </a>
+            </h2>
+            <ul class="announcement_center_tbox">
+                <li class="announcement_center_tli">
+                    <div class="announcement_tli1box">
+                    <a class="announcement_tli1">
+                        产品
+                    </a>
+                    </div>
+                    <a class="announcement_tli2">
+                        不在播时,如何维系粉丝活跃和留存?  ——主播动态上线
+                    </a>
+                    <span class="announcement_tli3">
+                        02/08
+                    </span>
+                </li>
+                  <li class="announcement_center_tli">
+                    <div class="announcement_tli1box">
+                    <a class="announcement_tli1">
+                        政策
+                    </a>
+                    </div>
+                    <a class="announcement_tli2">
+                        关于平台违规内容清理行动公示
+                    </a>
+                    <span class="announcement_tli3">
+                        01/28
+                    </span>
+                </li>
+                  <li class="announcement_center_tli">
+                    <div class="announcement_tli1box">
+                    <a class="announcement_tli1">
+                        政策
+                    </a>
+                    </div>
+                    <a class="announcement_tli2">
+                        虎牙主播及公会政策须知FAQ【必读】
+                    </a>
+                    <span class="announcement_tli3">
+                        12/04
+                    </span>
+                </li>
+                  <li class="announcement_center_tli">
+                    <div class="announcement_tli1box">
+                    <a class="announcement_tli1">
+                        政策
+                    </a>
+                    </div>
+                    <a class="announcement_tli2">
+                        关于部分游戏的禁播公告
+                    </a>
+                    <span class="announcement_tli3">
+                        08/24
+                    </span>
+                </li>
+                  <li class="announcement_center_tli">
+                    <div class="announcement_tli1box">
+                    <a class="announcement_tli1">
+                        政策
+                    </a>
+                    </div>
+                    <a class="announcement_tli2">
+                        虎牙直播礼物金元宝月结优化调整公告
+                    </a>
+                    <span class="announcement_tli3">
+                        02/15
+                    </span>
+                </li>
+                  <li class="announcement_center_tli">
+                    <div class="announcement_tli1box">
+                    <a class="announcement_tli1">
+                        新闻
+                    </a>
+                    </div>
+                    <a class="announcement_tli2">
+                        狂送10万福利 虎牙开黑节等你来【绝地求生 全军出击】
+                    </a>
+                    <span class="announcement_tli3">
+                        02/14
+                    </span>
+                </li>
+            </ul>
+            <div class="announcement_center_btn">
+                <a class="announcement_center_btn1">政策须知FAQ</a>
+                <a class="announcement_center_btn1">直播间广告规范</a>
+                <a class="announcement_center_btn1">志愿者招募</a>
+                <a class="announcement_center_btn1">弹幕举报上线</a>
+                <a class="announcement_center_btn1">有害信息举报</a>
+            </div>
+        </div>
+        <div class="announcement_right">
+            <div class="announcement_right_top">       
+                <h2 class="announcement_r_t_title"><i class="announcement_r_t_icon"></i>节目预告</h2>
+            </div>
+            <div class="announcement_right_buttom">
+                <ul class="announcement_r_b_ubox">
+                    <li class="announcement_r_b_lbox">
+                            <i class="announcement_lbox_icon1"></i>
+                            <i class="announcement_lbox_icon2"></i>
+                        <div class="announcement_r_b_l_main">
+                            <p class="announcement_main_p announcement_main_p_no">
+                                <span class="announcement_main_p1 announcement_main_p1_no">
+                                    今天16:00
+                                </span>
+                                <span class="announcement_main_p2">
+                                    LKC春季赛
+                                </span>
+                            </p>
+                            <div class="announcement_main_d announcement_main_d_no">
+                                <a class="announcement_main_d1"><img src="../img/up_15160050025312_pic.jpg"></a>
+                                <a class="announcement_main_d2">
+                                    <span class="announcement_main_d2_icon"></span>
+                                    <span class="announcement_main_d2_txt">预订</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="announcement_r_b_lbox">
+                            <i class="announcement_lbox_icon1"></i>
+                            <i class="announcement_lbox_icon3"></i>
+                        <div class="announcement_r_b_l_main">
+                            <p class="announcement_main_p">
+                                <span class="announcement_main_p1">
+                                    今天20:00
+                                </span>
+                                <span class="announcement_main_p2">
+                                    绝地求生春节七天乐
+                                </span>
+                            </p>
+                            <div class="announcement_main_d">
+                                <a class="announcement_main_d1"><img src="../img/up_15184007698436_pic.jpg"></a>
+                                <a class="announcement_main_d2">
+                                    <span class="announcement_main_d2_icon"></span>
+                                    <span class="announcement_main_d2_txt">预订</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="announcement_r_b_lbox">
+                            <i class="announcement_lbox_icon1"></i>
+                            <i class="announcement_lbox_icon3"></i>
+                        <div class="announcement_r_b_l_main">
+                            <p class="announcement_main_p">
+                                <span class="announcement_main_p1">
+                                    今天21:30
+                                </span>
+                                <span class="announcement_main_p2">
+                                    吃货狗狗的新年食谱
+                                </span>
+                            </p>
+                            <div class="announcement_main_d">
+                                <a class="announcement_main_d1"><img src="../img/up_15184260728449_pic.jpg"></a>
+                                <a class="announcement_main_d2">
+                                    <span class="announcement_main_d2_icon"></span>
+                                    <span class="announcement_main_d2_txt">预订</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="announcement_r_b_lbox">
+                            <i class="announcement_lbox_icon1"></i>
+                            <i class="announcement_lbox_icon3"></i>
+                        <div class="announcement_r_b_l_main">
+                            <p class="announcement_main_p">
+                                <span class="announcement_main_p1">
+                                    明天12:00
+                                </span>
+                                <span class="announcement_main_p2">
+                                    剑灵新春福利活动
+                                </span>
+                            </p>
+                            <div class="announcement_main_d">
+                                <a class="announcement_main_d1"><img src="../img/up_15185089159846_pic.jpg"></a>
+                                <a class="announcement_main_d2">
+                                    <span class="announcement_main_d2_icon"></span>
+                                    <span class="announcement_main_d2_txt">预订</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="announcement_r_b_lbox">
+                            <i class="announcement_lbox_icon1"></i>
+                            <i class="announcement_lbox_icon3"></i>
+                        <div class="announcement_r_b_l_main">
+                            <p class="announcement_main_p">
+                                <span class="announcement_main_p1">
+                                    23日17:00
+                                </span>
+                                <span class="announcement_main_p2">
+                                    LPL春季赛
+                                </span>
+                            </p>
+                            <div class="announcement_main_d">
+                                <a class="announcement_main_d1"><img src="../img/up_15154809167090_pic.png"></a>
+                                <a class="announcement_main_d2">
+                                    <span class="announcement_main_d2_icon"></span>
+                                    <span class="announcement_main_d2_txt">预订</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--公告-->
+</body>
+<script src="../JS/index.js"></script>
