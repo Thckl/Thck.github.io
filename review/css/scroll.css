@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.scroll-box{
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+}
+.scroll-box .scroll-box-img{
+    position: absolute;
+    margin-left: -500px;
+    width: 2000px;
+    height: 100%;
+}
+.scroll-box .scroll-box-img img{
+    float: left;
+    width: 500px;
+    height: 300px;
+}
+.scroll-box-btn{
+    position: absolute;
+    display: none;
+    width: 30px;
+    height: 50px; 
+    line-height: 50px;
+    background-color: #333333;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    cursor:pointer;
+}
+.scroll-box-btnlf{
+    left: 0;
+    top: 125px;
+}
+.scroll-box-btnrg{  
+    right: 0;
+    top: 125px;
+}
+.button-box {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    height: 10px;
+    width: 80px;
+}
+.button-box span {
+    float: left;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: #333333;
+    cursor: pointer;
+}
+.button-box .buttons1 {
+    background: red;
+}
