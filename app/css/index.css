@@ -3,9 +3,12 @@
     padding: 0;
 }
 body{
-
+    max-width: 6.4rem;
     background: url('../img/bg.png') 0 0 no-repeat;
     font-family: 'Microsoft YaHei',Helvetica;
+}
+.box{
+    overflow: hidden;
 }
 .left{
     width: 6.4rem;
@@ -62,7 +65,8 @@ body{
     margin: auto;
 }
 .basic{
-    clear: both;
+    overflow: hidden;
+    width: 100%;
     font-size: 14px;
     margin-top: .1rem;
     margin-bottom: .1rem;
@@ -92,5 +96,6 @@ body{
     list-style: none;
     
 }
+
 
 
