@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background: url('../img/bg.png') 0 0 no-repeat;
+    font-family: 'Microsoft YaHei',Helvetica;
+}
+.left{
+    width: 6.4rem;
+    height: .5rem;
+    background-color:rgb(15, 117, 189);
+    border-bottom: .05rem solid #fff;
+    box-shadow:0 1px 10px #333;
+    margin-bottom: .05rem;
+}
+.center{
+    width: 6.4rem;
+}
+.logo{
+    width: 1.65rem;
+    height: 1.37rem;
+    margin: .15rem auto;
+    background-color:#fff;
+
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.name{
+    display: block;
+    width: 80%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    border-bottom: .02rem solid rgb(15, 117, 189);
+}
+.position{
+    display: block;
+    width: 100%;
+    height: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 16px;
+    color: rgb(15, 117, 189);
+}
+.contact{
+    width: 80%;
+    margin: auto;
+}
+.contact span{
+    display: block;
+    font-size: 14px;
+}
+.right{
+    width: 6rem;
+    margin: auto;
+}
+.basic{
+    clear: both;
+    font-size: 14px;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+}
+.oblong-icon{
+    display: block;
+    border-right: .2rem solid transparent;
+    border-bottom: .1rem solid rgb(15, 117, 189);
+}
+.basic-bottom{
+    width: 100%;
+}
+.basic-bottom a{
+    color: #000;
+    text-decoration: none;
+}
+
+.basic-bottom-lf{
+    width: 50%;
+    list-style: none;
+    float: left;
+    
+}
+.basic-bottom-rg{
+    width: 50%;
+    float: right;
+    list-style: none;
+    
+}
+
+
